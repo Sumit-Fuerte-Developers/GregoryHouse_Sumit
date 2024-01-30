@@ -6,30 +6,29 @@ class DailyReport extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
                 children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.symmetric(horizontal: 7.5),),
-                      Text(
-                        "DAILY REPORTS",
-                        style: TextStyle(
-                          fontSize: 18.0,
-                          color: Color.fromARGB(255, 23, 17, 55),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 13.0),
-                        child: Text(
-                          ":",
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                    child: Row(
+                      children: [
+                        Text(
+                          "DAILY REPORTS",
                           style: TextStyle(
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             color: Color.fromARGB(255, 23, 17, 55),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                      ),
-                    ],
+                        Spacer(),
+                        Text(
+                            ":",
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Color.fromARGB(255, 23, 17, 55),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
                 ],
               );

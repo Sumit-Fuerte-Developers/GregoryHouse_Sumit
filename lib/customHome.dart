@@ -28,10 +28,11 @@ class _CustomHomeState extends State<CustomHome> {
             height: 70.0,
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 65, 143, 155),
+              boxShadow: [BoxShadow()],
             ),
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 12.0, horizontal: 13.0),
+                  const EdgeInsets.symmetric(vertical: 12.0, horizontal: 15.0),
               child: CupertinoSearchTextField(
                 backgroundColor: Colors.white,
                 borderRadius: BorderRadius.circular(30),

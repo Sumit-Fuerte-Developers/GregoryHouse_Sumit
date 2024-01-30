@@ -13,7 +13,7 @@ class CustomSymptoms extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 13.0),
+                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
                     child: Text(
                       "Symptoms of Covid to watch out for",
                       style: TextStyle(
@@ -24,7 +24,7 @@ class CustomSymptoms extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 13.0),
+                    padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 15.0),
                     child: Text(
                       "March 06, 09.01 PM",
                       style: TextStyle(color: Colors.grey[400], fontSize: 13.0),
@@ -52,7 +52,7 @@ class CustomSymptoms extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 13.0),
+                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
                     child: Text(
                       "Symptoms of Covid to watch out for",
                       style: TextStyle(
@@ -63,7 +63,7 @@ class CustomSymptoms extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 13.0),
+                    padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 15.0),
                     child: Text(
                       "July 01, 06.20 AM",
                       style: TextStyle(color: Colors.grey[400], fontSize: 12.0),

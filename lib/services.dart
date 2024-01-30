@@ -9,7 +9,7 @@ class Services extends StatelessWidget {
                   Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 13.0),
+                        padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 15.0),
                         child: Text("SERVICES",
                         style: TextStyle(
                           fontSize: 18.0,
@@ -19,7 +19,7 @@ class Services extends StatelessWidget {
                       ),
                       Spacer(),
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 9.0, horizontal: 13.0),
+                        padding: const EdgeInsets.symmetric(vertical: 9.0, horizontal: 15.0),
                         child: Text("See all",
                         style: TextStyle(
                           fontSize: 16.0,

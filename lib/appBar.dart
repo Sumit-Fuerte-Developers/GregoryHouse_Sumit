@@ -12,9 +12,9 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
           Row(
             children: [
               Text(
-                "👋 Hello,",
-                style: TextStyle(fontSize: 16),
-              ),
+                  "👋 Hello,",
+                  style: TextStyle(fontSize: 16),
+                ),
             ],
           ),
           Text("Gregory House"),
@@ -22,7 +22,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
       ),
       actions: [
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 13.0),
+          padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 15.0),
           child: CircleAvatar(
             backgroundImage: AssetImage("assets/images/Image1.png"),
             radius: 20.0

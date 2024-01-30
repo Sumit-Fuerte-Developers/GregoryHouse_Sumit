@@ -17,10 +17,10 @@ class _ListCalendarState extends State<ListCalendar> {
 
     return Container(
       color: Color.fromARGB(255, 65, 143, 155),
-      height: 120.0, // Increased height to accommodate week names
+      height: 120.0,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 365 * 5, // Assuming 5 years of dates
+        itemCount: 365 * 5, 
         itemBuilder: (BuildContext context, int index) {
           // Calculate the date for the current index
           DateTime date = currentDate.add(Duration(days: index));
@@ -43,52 +43,58 @@ class _ListCalendarState extends State<ListCalendar> {
           // Get the week name for the current date
           String weekName = getWeekName(date.weekday);
 
-          return Column(
-            children: [
-              Text(
-                weekName,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 14.0),
+            child: Column(
+              children: [
+                Text(
+                  weekName,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              Container(
-                width: 45.0,
-                height: 45.0,
-                margin: EdgeInsets.all(8.0),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
-                      spreadRadius: 1,
-                      blurRadius: 2,
-                      offset: Offset(0, 2), // changes the shadow position
-                    ),
-                  ],
-                  shape: BoxShape.circle,
-                  color: isTodayInCurrentMonth
-                      ? Color.fromARGB(255, 65, 143, 155)
-                      : isInCurrentMonth
-                          ? Colors.white
-                          : isInFutureMonth
-                              ? Color.fromARGB(255, 65, 143, 155)
-                              : Color.fromARGB(255, 65, 143, 155),
-                ),
-                child: Center(
-                  child: Text(
-                    '${date.day}',
-                    style: TextStyle(
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 6),
+                  child: Container(
+                    width: 30.0,
+                    height: 30.0,
+                    margin: EdgeInsets.all(8.0),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.3),
+                          spreadRadius: 1,
+                          blurRadius: 2,
+                          offset: Offset(0, 2), // changes the shadow position
+                        ),
+                      ],
+                      shape: BoxShape.circle,
                       color: isTodayInCurrentMonth
-                          ? Colors.white
+                          ? Color.fromARGB(255, 65, 143, 155)
                           : isInCurrentMonth
-                              ? Colors.black
-                              : Colors.white,
+                              ? Colors.white
+                              : isInFutureMonth
+                                  ? Color.fromARGB(255, 65, 143, 155)
+                                  : Color.fromARGB(255, 65, 143, 155),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '${date.day}',
+                        style: TextStyle(
+                          color: isTodayInCurrentMonth
+                              ? Colors.white
+                              : isInCurrentMonth
+                                  ? Colors.black
+                                  : Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              
-            ],
+                
+              ],
+            ),
           );
         },
       ),
