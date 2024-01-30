@@ -6,18 +6,18 @@ class MyContainer3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-                height: 275.0,
+                height: 260.0,
                 color: Colors.white70,
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 7.5),
+                      padding: const EdgeInsets.symmetric(horizontal: 18.0),
                       child: Row(
                         children: [
                           CircleAvatar(
                               backgroundImage:
                                   AssetImage("assets/images/Image1.png"),
-                              radius: 35.0),
+                              radius: 30.0),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: Column(
@@ -94,7 +94,7 @@ class MyContainer3 extends StatelessWidget {
                     Row(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 7.5),
+                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
                           child: Column(
                             children: [
                               Center(
@@ -116,7 +116,7 @@ class MyContainer3 extends StatelessWidget {
                         ),
                         Spacer(),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 10.0),
                           child: ElevatedButton(
                             onPressed: () {},
                             child: Text("Make a Appointment"),
@@ -125,7 +125,7 @@ class MyContainer3 extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(60.0),
                               ),
-                              fixedSize: Size(300, 70),
+                              fixedSize: Size(300, 60),
                             ),
                           ),
                         ),

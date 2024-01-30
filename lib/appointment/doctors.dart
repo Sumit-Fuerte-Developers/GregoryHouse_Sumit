@@ -21,7 +21,7 @@ class Doctors extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),),
           leading: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child:
                 IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
           ),
@@ -39,13 +39,13 @@ class Doctors extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                height: 120.0,
+                height: 110.0,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 65, 143, 155),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
-                      vertical: 35.0, horizontal: 13.0),
+                      vertical: 35.0, horizontal: 15.0),
                   child: CupertinoSearchTextField(
                     backgroundColor: Colors.white,
                     borderRadius: BorderRadius.circular(50),

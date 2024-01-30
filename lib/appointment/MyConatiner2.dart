@@ -6,7 +6,7 @@ class MyConatiner2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-                height: 275.0,
+                height: 260.0,
                 color: Colors.white70,
                 child: Column(
                   children: [
@@ -15,7 +15,7 @@ class MyConatiner2 extends StatelessWidget {
                       child: Row(
                         children: [
                           Padding(
-                            padding: EdgeInsets.symmetric( horizontal: 7.5),
+                            padding: EdgeInsets.symmetric( horizontal: 10.0),
                           ),
                           Text(
                             "RECOMMENDED",
@@ -41,13 +41,13 @@ class MyConatiner2 extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 7.5),
+                      padding: const EdgeInsets.symmetric(horizontal: 18.0),
                       child: Row(
                         children: [
                           CircleAvatar(
                               backgroundImage:
                                   AssetImage("assets/images/Image1.png"),
-                              radius: 35.0),
+                              radius: 30.0),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: Column(
@@ -124,7 +124,7 @@ class MyConatiner2 extends StatelessWidget {
                     Row(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 7.5),
+                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
                           child: Column(
                             children: [
                               Center(
@@ -146,7 +146,7 @@ class MyConatiner2 extends StatelessWidget {
                         ),
                         Spacer(),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 10.0),
                           child: ElevatedButton(
                             onPressed: () {},
                             child: Text("Make a Appointment"),
@@ -155,7 +155,7 @@ class MyConatiner2 extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(60.0),
                               ),
-                              fixedSize: Size(300, 70),
+                              fixedSize: Size(300, 60),
                             ),
                           ),
                         ),
