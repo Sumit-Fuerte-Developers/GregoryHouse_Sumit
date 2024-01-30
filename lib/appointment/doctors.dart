@@ -23,7 +23,10 @@ class Doctors extends StatelessWidget {
           leading: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child:
-                IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                IconButton(onPressed: () {
+                  Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => CustomHome()),);
+                }, icon: Icon(Icons.arrow_back_ios)),
           ),
           actions: [
             Padding(
