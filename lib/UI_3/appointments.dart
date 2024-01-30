@@ -21,7 +21,7 @@ class Appointments extends StatelessWidget {
             ),
           ),
           leading: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child:
                 IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
           ),
@@ -64,37 +64,40 @@ class Appointments extends StatelessWidget {
                 endIndent: 220.0,
               ),
 
-              Container(
-                      color: Colors.white70,
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 20.0, vertical: 30.0),
-                            child: Container(
-                              height: 60,
-                              width: 380.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.amber[700],
-                                  shape: BoxShape.rectangle,
-                                  borderRadius: BorderRadius.circular(50.0)),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Pay & Confirm",
-                                    style: TextStyle(
-                                        fontSize: 17.0,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w500),
-                                  ),
-                                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                child: Container(
+                        color: Colors.white70,
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20.0, vertical: 30.0),
+                              child: Container(
+                                height: 60,
+                                width: 380.0,
+                                decoration: BoxDecoration(
+                                    color: Colors.amber[700],
+                                    shape: BoxShape.rectangle,
+                                    borderRadius: BorderRadius.circular(50.0)),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Pay & Confirm",
+                                      style: TextStyle(
+                                          fontSize: 17.0,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w500),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
+              ),
             ],
           ),
         ),
